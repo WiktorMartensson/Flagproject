@@ -1,0 +1,98 @@
+.country-details {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 320px; 
+    margin: 20px;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.country-name {
+    padding-top: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
+
+.country-image-frame {
+    width: 100%;
+}
+
+
+.country-image {
+    border-radius: 8px 0px;
+    max-height: 150px; 
+    width:100%; 
+    object-fit: cover;
+    
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.country__details {
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 25px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 70px;
+}
+
+.countrycards-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0px 70px;
+}
+
+.root-layout.dark-mode .country-details {
+    background-color: #2b3844;
+    color: #f2f2f2;
+}
+
+.root-layout.dark-mode .country-name {
+    color: #f2f2f2;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .countrycards-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0px;
+    }
+
+    .country-details {
+        margin: 30px;
+    }
+    .top-container {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0px;
+    }
+
+    #searchbar {
+        align-self: center;
+        width: 90%;
+    }
+
+}

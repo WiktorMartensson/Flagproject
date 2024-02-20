@@ -1,0 +1,28 @@
+
+.border__button_ {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  padding: 8px 16px;
+  margin: 4px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  align-items: center;
+  font-size: 14px;
+}
+
+.border__button_:hover {
+  scale: 1.1;
+}
+
+.root-layout.dark-mode .border__button_{
+  background-color: #2b3844;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .border-section {
+    margin-left: -60px;
+  }
+}
